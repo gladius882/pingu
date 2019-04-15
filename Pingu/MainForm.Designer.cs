@@ -36,169 +36,217 @@ namespace Pingu
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-t",
-									"Ping the specified host until stopped."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-a",
-									"Resolve addresses to hostnames."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
-									"4",
-									"-n",
-									"Number of echo requests to send."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
-									"32",
-									"-l",
-									"Send buffer size."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-f",
-									"Set Don\'t Fragment flag in packet (IPv4-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
-									"52",
-									"-i",
-									"Time To Live."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-									"some",
-									"-v",
-									"Type Of Service"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
-									"1",
-									"-r",
-									"Record route for count hops (IPv4-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
-									"1000",
-									"-s",
-									"Timestamp for count hops (IPv4-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
-									"some",
-									"-j",
-									"Loose source route along host-list (IPv4-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
-									"some",
-									"-k",
-									"Strict source route along host-list (IPv4-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
-									"1000",
-									"-w",
-									"Timeout in milliseconds to wait for each reply."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-R",
-									"Use routing header to test reverse route also (IPv6-only)."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
-									"some",
-									"-S",
-									"Source address to use."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
-									"some",
-									"-c",
-									"Routing compartment identifier."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-p",
-									"Ping a Hyper-V Network Virtualization provider address."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-4",
-									"Force using IPv4."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
-			System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem(new string[] {
-									"---",
-									"-6",
-									"Force using IPv6."}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238))));
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			this.listView1 = new MetroFramework.Controls.MetroListView();
-			this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-			this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-			this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+			this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+			this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+			this.htmlPanel1 = new MetroFramework.Drawing.Html.HtmlPanel();
+			this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+			this.splitContainer1.Panel1.SuspendLayout();
+			this.splitContainer1.Panel2.SuspendLayout();
+			this.splitContainer1.SuspendLayout();
+			this.toolStrip1.SuspendLayout();
+			this.toolStrip2.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// listView1
+			// propertyGrid1
 			// 
-			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-									this.columnHeader4,
-									this.columnHeader5,
-									this.columnHeader6});
-			this.listView1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			listViewItem1.StateImageIndex = 0;
-			listViewItem2.StateImageIndex = 0;
-			listViewItem3.StateImageIndex = 0;
-			listViewItem4.StateImageIndex = 0;
-			listViewItem5.StateImageIndex = 0;
-			listViewItem6.StateImageIndex = 0;
-			listViewItem7.StateImageIndex = 0;
-			listViewItem8.StateImageIndex = 0;
-			listViewItem9.StateImageIndex = 0;
-			listViewItem10.StateImageIndex = 0;
-			listViewItem11.StateImageIndex = 0;
-			listViewItem12.StateImageIndex = 0;
-			listViewItem13.StateImageIndex = 0;
-			listViewItem14.StateImageIndex = 0;
-			listViewItem15.StateImageIndex = 0;
-			listViewItem16.StateImageIndex = 0;
-			listViewItem17.StateImageIndex = 0;
-			listViewItem18.StateImageIndex = 0;
-			this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-									listViewItem1,
-									listViewItem2,
-									listViewItem3,
-									listViewItem4,
-									listViewItem5,
-									listViewItem6,
-									listViewItem7,
-									listViewItem8,
-									listViewItem9,
-									listViewItem10,
-									listViewItem11,
-									listViewItem12,
-									listViewItem13,
-									listViewItem14,
-									listViewItem15,
-									listViewItem16,
-									listViewItem17,
-									listViewItem18});
-			this.listView1.LabelEdit = true;
-			this.listView1.Location = new System.Drawing.Point(12, 12);
-			this.listView1.Name = "listView1";
-			this.listView1.OwnerDraw = true;
-			this.listView1.Size = new System.Drawing.Size(516, 517);
-			this.listView1.TabIndex = 0;
-			this.listView1.UseCompatibleStateImageBehavior = false;
-			this.listView1.UseSelectable = true;
-			this.listView1.View = System.Windows.Forms.View.Details;
+			this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.propertyGrid1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
+			this.propertyGrid1.Name = "propertyGrid1";
+			this.propertyGrid1.PropertySort = System.Windows.Forms.PropertySort.Categorized;
+			this.propertyGrid1.Size = new System.Drawing.Size(286, 546);
+			this.propertyGrid1.TabIndex = 1;
+			this.propertyGrid1.ToolbarVisible = false;
 			// 
-			// columnHeader4
+			// splitContainer1
 			// 
-			this.columnHeader4.Text = "Value";
-			this.columnHeader4.Width = 67;
+			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+			this.splitContainer1.Name = "splitContainer1";
 			// 
-			// columnHeader5
+			// splitContainer1.Panel1
 			// 
-			this.columnHeader5.Text = "Option";
-			this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.splitContainer1.Panel1.Controls.Add(this.propertyGrid1);
 			// 
-			// columnHeader6
+			// splitContainer1.Panel2
 			// 
-			this.columnHeader6.Text = "Desc";
-			this.columnHeader6.Width = 263;
+			this.splitContainer1.Panel2.Controls.Add(this.htmlPanel1);
+			this.splitContainer1.Panel2.Controls.Add(this.toolStrip2);
+			this.splitContainer1.Panel2.Controls.Add(this.toolStrip1);
+			this.splitContainer1.Size = new System.Drawing.Size(705, 546);
+			this.splitContainer1.SplitterDistance = 286;
+			this.splitContainer1.TabIndex = 2;
+			// 
+			// toolStrip1
+			// 
+			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.toolStripButton1,
+									this.toolStripButton2,
+									this.toolStripButton3});
+			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+			this.toolStrip1.Name = "toolStrip1";
+			this.toolStrip1.Size = new System.Drawing.Size(415, 25);
+			this.toolStrip1.TabIndex = 3;
+			this.toolStrip1.Text = "toolStrip1";
+			// 
+			// toolStripButton1
+			// 
+			this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton1.Name = "toolStripButton1";
+			this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton1.Text = "toolStripButton1";
+			// 
+			// toolStripButton2
+			// 
+			this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton2.Name = "toolStripButton2";
+			this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton2.Text = "toolStripButton2";
+			// 
+			// toolStripButton3
+			// 
+			this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton3.Name = "toolStripButton3";
+			this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton3.Text = "toolStripButton3";
+			// 
+			// toolStrip2
+			// 
+			this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.toolStripLabel1,
+									this.toolStripLabel2,
+									this.toolStripSeparator1,
+									this.toolStripLabel3,
+									this.toolStripLabel4,
+									this.toolStripSeparator2,
+									this.toolStripLabel5,
+									this.toolStripLabel6});
+			this.toolStrip2.Location = new System.Drawing.Point(0, 521);
+			this.toolStrip2.Name = "toolStrip2";
+			this.toolStrip2.Size = new System.Drawing.Size(415, 25);
+			this.toolStrip2.TabIndex = 4;
+			this.toolStrip2.Text = "toolStrip2";
+			// 
+			// toolStripLabel1
+			// 
+			this.toolStripLabel1.ForeColor = System.Drawing.Color.Red;
+			this.toolStripLabel1.Name = "toolStripLabel1";
+			this.toolStripLabel1.Size = new System.Drawing.Size(61, 22);
+			this.toolStripLabel1.Text = "Maximum";
+			// 
+			// htmlPanel1
+			// 
+			this.htmlPanel1.AutoScroll = true;
+			this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(415, 18);
+			this.htmlPanel1.BackColor = System.Drawing.SystemColors.Window;
+			this.htmlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.htmlPanel1.Location = new System.Drawing.Point(0, 25);
+			this.htmlPanel1.Name = "htmlPanel1";
+			this.htmlPanel1.Size = new System.Drawing.Size(415, 496);
+			this.htmlPanel1.TabIndex = 5;
+			this.htmlPanel1.Text = "htmlPanel1";
+			// 
+			// toolStripLabel2
+			// 
+			this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
+			this.toolStripLabel2.Name = "toolStripLabel2";
+			this.toolStripLabel2.Size = new System.Drawing.Size(13, 22);
+			this.toolStripLabel2.Text = "0";
+			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+			// 
+			// toolStripLabel3
+			// 
+			this.toolStripLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.toolStripLabel3.Name = "toolStripLabel3";
+			this.toolStripLabel3.Size = new System.Drawing.Size(60, 22);
+			this.toolStripLabel3.Text = "Minimum";
+			// 
+			// toolStripLabel4
+			// 
+			this.toolStripLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.toolStripLabel4.Name = "toolStripLabel4";
+			this.toolStripLabel4.Size = new System.Drawing.Size(13, 22);
+			this.toolStripLabel4.Text = "0";
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+			// 
+			// toolStripLabel5
+			// 
+			this.toolStripLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+			this.toolStripLabel5.Name = "toolStripLabel5";
+			this.toolStripLabel5.Size = new System.Drawing.Size(50, 22);
+			this.toolStripLabel5.Text = "Average";
+			// 
+			// toolStripLabel6
+			// 
+			this.toolStripLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+			this.toolStripLabel6.Name = "toolStripLabel6";
+			this.toolStripLabel6.Size = new System.Drawing.Size(13, 22);
+			this.toolStripLabel6.Text = "0";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(618, 575);
-			this.Controls.Add(this.listView1);
+			this.ClientSize = new System.Drawing.Size(705, 546);
+			this.Controls.Add(this.splitContainer1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainForm";
 			this.Text = "Pingu";
+			this.splitContainer1.Panel1.ResumeLayout(false);
+			this.splitContainer1.Panel2.ResumeLayout(false);
+			this.splitContainer1.Panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+			this.splitContainer1.ResumeLayout(false);
+			this.toolStrip1.ResumeLayout(false);
+			this.toolStrip1.PerformLayout();
+			this.toolStrip2.ResumeLayout(false);
+			this.toolStrip2.PerformLayout();
 			this.ResumeLayout(false);
 		}
-		private System.Windows.Forms.ColumnHeader columnHeader6;
-		private System.Windows.Forms.ColumnHeader columnHeader5;
-		private System.Windows.Forms.ColumnHeader columnHeader4;
-		private MetroFramework.Controls.MetroListView listView1;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel6;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+		private System.Windows.Forms.ToolStrip toolStrip2;
+		private System.Windows.Forms.ToolStripButton toolStripButton3;
+		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		private System.Windows.Forms.ToolStripButton toolStripButton1;
+		private System.Windows.Forms.ToolStrip toolStrip1;
+		private MetroFramework.Drawing.Html.HtmlPanel htmlPanel1;
+		private System.Windows.Forms.SplitContainer splitContainer1;
+		private System.Windows.Forms.PropertyGrid propertyGrid1;
 	}
 }

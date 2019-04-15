@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.NetworkInformation;
 
 namespace Pingu
 {
@@ -18,16 +20,13 @@ namespace Pingu
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		private PingerOptions opts = new PingerOptions();
+		
 		public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
 			InitializeComponent();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			propertyGrid1.SelectedObject = opts;
 		}
 	}
 }
