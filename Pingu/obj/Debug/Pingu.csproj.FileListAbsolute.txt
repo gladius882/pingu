@@ -1,0 +1,10 @@
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\bin\Debug\Pingu.exe
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\bin\Debug\Pingu.pdb
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\obj\Debug\Pingu.csprojResolveAssemblyReference.cache
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\obj\Debug\Pingu.MainForm.resources
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\obj\Debug\Pingu.csproj.GenerateResource.Cache
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\obj\Debug\Pingu.exe
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\obj\Debug\Pingu.pdb
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\bin\Debug\MetroFramework.Design.dll
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\bin\Debug\MetroFramework.dll
+C:\Users\gladius882\Documents\SharpDevelop Projects\Pingu\Pingu\bin\Debug\MetroFramework.Fonts.dll
