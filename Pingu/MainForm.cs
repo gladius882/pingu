@@ -85,10 +85,15 @@ namespace Pingu
 				toolStripAvg.Text = (PingTimeoutSum/NumOfRequests).ToString();
 			}
 			
-			System.Threading.Thread.Sleep(Pinger.Options.Delay);
-			this.Thread.Join(Pinger.Options.Delay);
-			this.Thread = new Thread(Pinger.SendAsync);
-			this.Thread.Start();
+			if(NumOfRequests < Pinger.Options.RequestsCount || Pinger.Options.Infinite) {
+				System.Threading.Thread.Sleep(Pinger.Options.Delay);
+				this.Thread.Join(Pinger.Options.Delay);
+				this.Thread = new Thread(Pinger.SendAsync);
+				this.Thread.Start();
+			} else {
+				AddLog(Environment.NewLine+"----------------- *** DONE *** -----------------"+Environment.NewLine);
+			}
+			
 		}
 		
 		void ToolStripButton2Click(object sender, EventArgs e)
@@ -103,6 +108,7 @@ namespace Pingu
 			toolStripMax.Text = "0";
 			toolStripMin.Text = "0";
 			toolStripAvg.Text = "0";
+			toolStripCurrent.Text = "0";
 		}
 		
 		delegate void AddLogCallback(string message);
