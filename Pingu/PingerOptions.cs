@@ -24,6 +24,16 @@ namespace Pingu
 		[DisplayName("Target")]
 		public string Target {get; set;}
 		
+		[Category("Basic")]
+		[Description("Delay in milliseconds after each request")]
+		[DisplayName("Delay")]
+		public int Delay {get; set;}
+		
+		[Category("Pingu")]
+		[Description("Make Pingu sound when ping will increase above this value (milliseconds)")]
+		[DisplayName("Max ping")]
+		public int MaxPing {get; set;}
+		
 		[Category("ping.exe")]
 		[Description("Ping the specified host until stopped.")]
 		[DisplayName("-t")]
@@ -104,6 +114,8 @@ namespace Pingu
 		public PingerOptions()
 		{
 			Target = "google.com";
+			Delay = 1000;
+			MaxPing = 100;
 			Infinite = false;
 			Resolve = false;
 			RequestsCount = 4;
