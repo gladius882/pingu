@@ -39,7 +39,6 @@ namespace Pingu
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-			this.htmlPanel1 = new MetroFramework.Drawing.Html.HtmlPanel();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.toolStrip2 = new System.Windows.Forms.ToolStrip();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -61,7 +60,6 @@ namespace Pingu
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
-			this.htmlPanel1.SuspendLayout();
 			this.toolStrip2.SuspendLayout();
 			this.toolStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -89,31 +87,19 @@ namespace Pingu
 			// 
 			// splitContainer1.Panel2
 			// 
-			this.splitContainer1.Panel2.Controls.Add(this.htmlPanel1);
+			this.splitContainer1.Panel2.Controls.Add(this.textBox1);
 			this.splitContainer1.Panel2.Controls.Add(this.toolStrip2);
 			this.splitContainer1.Panel2.Controls.Add(this.toolStrip1);
 			this.splitContainer1.Size = new System.Drawing.Size(705, 546);
 			this.splitContainer1.SplitterDistance = 286;
 			this.splitContainer1.TabIndex = 2;
 			// 
-			// htmlPanel1
-			// 
-			this.htmlPanel1.AutoScroll = true;
-			this.htmlPanel1.AutoScrollMinSize = new System.Drawing.Size(415, 0);
-			this.htmlPanel1.BackColor = System.Drawing.SystemColors.Window;
-			this.htmlPanel1.Controls.Add(this.textBox1);
-			this.htmlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.htmlPanel1.Location = new System.Drawing.Point(0, 31);
-			this.htmlPanel1.Name = "htmlPanel1";
-			this.htmlPanel1.Size = new System.Drawing.Size(415, 490);
-			this.htmlPanel1.TabIndex = 5;
-			this.htmlPanel1.Text = "<style>div { margin-left: 10px; } </style>";
-			// 
 			// textBox1
 			// 
 			this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBox1.Enabled = false;
 			this.textBox1.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.textBox1.Location = new System.Drawing.Point(0, 0);
+			this.textBox1.Location = new System.Drawing.Point(0, 31);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -263,15 +249,15 @@ namespace Pingu
 			this.ClientSize = new System.Drawing.Size(705, 546);
 			this.Controls.Add(this.splitContainer1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.KeyPreview = true;
 			this.Name = "MainForm";
 			this.Text = "Pingu";
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainFormKeyDown);
 			this.splitContainer1.Panel1.ResumeLayout(false);
 			this.splitContainer1.Panel2.ResumeLayout(false);
 			this.splitContainer1.Panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
 			this.splitContainer1.ResumeLayout(false);
-			this.htmlPanel1.ResumeLayout(false);
-			this.htmlPanel1.PerformLayout();
 			this.toolStrip2.ResumeLayout(false);
 			this.toolStrip2.PerformLayout();
 			this.toolStrip1.ResumeLayout(false);
@@ -295,7 +281,6 @@ namespace Pingu
 		private System.Windows.Forms.ToolStripButton toolStripButtonStop;
 		private System.Windows.Forms.ToolStripButton toolStripButtonStart;
 		private System.Windows.Forms.ToolStrip toolStrip1;
-		private MetroFramework.Drawing.Html.HtmlPanel htmlPanel1;
 		private System.Windows.Forms.SplitContainer splitContainer1;
 		private System.Windows.Forms.PropertyGrid propertyGrid1;
 	}

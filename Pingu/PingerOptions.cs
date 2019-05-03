@@ -34,6 +34,11 @@ namespace Pingu
 		[DisplayName("Max ping")]
 		public int MaxPing {get; set;}
 		
+		[Category("Pingu")]
+		[Description("Show reply in log control")]
+		[DisplayName("Logging")]
+		public bool Logging {get; set;}
+		
 		[Category("ping.exe")]
 		[Description("Ping the specified host until stopped.")]
 		[DisplayName("-t")]
@@ -116,6 +121,7 @@ namespace Pingu
 			Target = "google.com";
 			Delay = 1000;
 			MaxPing = 100;
+			Logging = true;
 			Infinite = false;
 			Resolve = false;
 			RequestsCount = 4;

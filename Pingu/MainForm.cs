@@ -40,12 +40,16 @@ namespace Pingu
 			NootNoot.Load();
 		}
 		
-		private void ToolStripButtonStartClick(object sender, EventArgs e)
+		private void StartPing()
 		{
 			StopPinging = false;
 			this.Thread = new Thread(Pinger.SendAsync);
 			this.Thread.Start();
-//			Pinger.SendAsync();
+		}
+		
+		private void ToolStripButtonStartClick(object sender, EventArgs e)
+		{
+			StartPing();
 		}
 		
 		private void ping_Complete(object sender, PingCompletedEventArgs e)
@@ -62,11 +66,18 @@ namespace Pingu
 				long time = reply.RoundtripTime;
 				NumOfRequests++;
 				PingTimeoutSum += time;
-				string message = String.Format("Reply from {0}: bytes={1} time={2} TTL={3}",
+				string message = "";
+				
+				try {
+					message = String.Format("Reply from {0}: bytes={1} time={2} TTL={3}",
 				                              Pinger.Options.Target,
 				                              reply.Buffer.Length.ToString(),
 				                              time.ToString(),
 				                              reply.Options.Ttl.ToString());
+				} catch {
+					MessageBox.Show("Excetpion");
+				}
+				
 				
 				AddLog(message);
 				if(time >= Pinger.Options.MaxPing) {
@@ -87,10 +98,12 @@ namespace Pingu
 			
 			if(NumOfRequests < Pinger.Options.RequestsCount || Pinger.Options.Infinite) {
 				System.Threading.Thread.Sleep(Pinger.Options.Delay);
-				this.Thread.Join(Pinger.Options.Delay);
+//				this.Thread.Join(Pinger.Options.Delay);
 				this.Thread = new Thread(Pinger.SendAsync);
 				this.Thread.Start();
 			} else {
+				NumOfRequests = 0;
+				PingTimeoutSum = 0;
 				AddLog(Environment.NewLine+"----------------- *** DONE *** -----------------"+Environment.NewLine);
 			}
 			
@@ -115,6 +128,10 @@ namespace Pingu
 		
 		private void AddLog(string message)
 		{
+			if(Pinger.Options.Logging == false) {
+				return;
+			}
+			
 			if(this.textBox1.InvokeRequired)
 			{
 				AddLogCallback callback = new MainForm.AddLogCallback(AddLog);
@@ -123,6 +140,13 @@ namespace Pingu
 			else
 			{
 				this.textBox1.Text += message + Environment.NewLine;
+			}
+		}
+		
+		void MainFormKeyDown(object sender, KeyEventArgs e)
+		{
+			if(e.KeyCode == Keys.R && e.Control) {
+				StartPing();
 			}
 		}
 	}
